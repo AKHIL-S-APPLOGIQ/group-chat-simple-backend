@@ -3,8 +3,10 @@ from typing import List
 import random
 app = FastAPI(
     title="FastAPI WebSocket App",
+    docs_url="/docs",
     description="A simple FastAPI app with WebSocket support and API documentation.",
     version="1.0.0"
+
 )
 
 # Sample user names
