@@ -8,9 +8,13 @@ from urllib.parse import parse_qs,urlparse
 app = FastAPI(
     title="FastAPI WebSocket App",
     docs_url="/docs",
-    description="A simple FastAPI app with WebSocket support and API documentation.",
-    version="1.0.0"
+    description="""A simple FastAPI app with WebSocket support and API documentation.
 
+    **WebSocket Endpoint:**
+    - **URL**: `/ws/{room_name}`
+    - **Query parameter**: `username` (optional; assigns a random username if not provided)
+    """,
+    version="1.0.0"
 )
 
 # Add CORSMiddleware to allow all origins
