@@ -1,8 +1,11 @@
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from typing import List
 import random
-
-app = FastAPI()
+app = FastAPI(
+    title="FastAPI WebSocket App",
+    description="A simple FastAPI app with WebSocket support and API documentation.",
+    version="1.0.0"
+)
 
 # Sample user names
 sample_users = {
