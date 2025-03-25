@@ -5,8 +5,6 @@ import random
 from urllib.parse import parse_qs,urlparse
 
 
-app = FastAPI()
-
 app = FastAPI(
     title="FastAPI WebSocket App",
     docs_url="/docs",
